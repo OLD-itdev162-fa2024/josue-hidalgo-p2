@@ -1,0 +1,18 @@
+<div *ngFor="let post of posts">
+    <mat-card class="post-card" routerLink="/posts/{{post.id}}">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{post.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="https://avery-schmitz.com/wp-content/uploads/2022/11/all-taylor-albums.jpg"
+            alt="Taylor Swift Album Covers">
+        <mat-card-content>
+            <p>{{post.date | date : 'longDate'}}</p>
+            <p>{{post.body}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

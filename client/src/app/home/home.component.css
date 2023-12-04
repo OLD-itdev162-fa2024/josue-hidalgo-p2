@@ -1,0 +1,14 @@
+.example-header-image {
+    background-image: url('https://hips.hearstapps.com/hmg-prod/images/taylor-swift-performs-onstage-for-night-one-of-taylor-swift-news-photo-1689066293.jpg?crop=0.70801xw:1xh;center,top&resize=1200:*');
+    background-size: cover;
+}
+
+.post-card {
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.post-card:hover {
+    cursor: pointer;
+    background-color: pink;
+}

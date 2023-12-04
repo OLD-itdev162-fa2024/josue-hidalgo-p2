@@ -1,0 +1,15 @@
+<mat-card class="post-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{post.title}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="https://avery-schmitz.com/wp-content/uploads/2022/11/all-taylor-albums.jpg"
+        alt="Taylor Swift Album Covers">
+    <mat-card-content>
+        <p>{{post.date | date : 'longDate'}}</p>
+        <p>{{post.body}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button routerLink="/">Back</button>
+    </mat-card-actions>
+</mat-card>
